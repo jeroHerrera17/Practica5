@@ -4,4 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        particula.cpp \
+        vector2d.cpp
+
+HEADERS += \
+    particula.h \
+    vector2d.h
