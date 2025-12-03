@@ -22,6 +22,20 @@ private:
     ofstream archivo;
     string rutaArchivoSalida;
 
+    // Métodos privados de detección
+    bool detectarColisionParticulas(const Particula& p1, const Particula& p2);
+    bool detectarColisionObstaculo(const Particula& p, const Obstaculo& obs,
+                                   Vector2D& puntoColision, Vector2D& normal);
+
+    // Métodos privados de manejo de colisiones
+    void manejarColisionParticulas(Particula& p1, Particula& p2);
+    void manejarColisionObstaculo(Particula& p, const Obstaculo& obs);
+    void manejarColisionPared(Particula& p);
+
+    // Utilidades privadas
+    void guardarPosiciones();
+    void registrarColision(const string& tipo, int id1, int id2 = -1);
+
 public:
     // Constructor y destructor
     Simulador(double ancho, double alto, double timestep = 0.01, double coefRest = 0.7);
