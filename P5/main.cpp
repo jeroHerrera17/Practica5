@@ -41,6 +41,14 @@ int main() {
     // Partícula 5: centro-inferior
     sim.agregarParticula(Vector2D(50.0, 10.0), Vector2D(0.0, 40.0), 1.0, 3.0);
 
+    //
+    // Particulas extras por si la profe lo requiere :p
+    /*sim.agregarParticula(Vector2D(30.0, 50.0), Vector2D(20.0, 0.0), 1.3, 3.1);
+    sim.agregarParticula(Vector2D(70.0, 50.0), Vector2D(-20.0, 0.0), 1.1, 2.9);
+    sim.agregarParticula(Vector2D(50.0, 30.0), Vector2D(0.0, 25.0), 0.9, 3.3);
+    sim.agregarParticula(Vector2D(50.0, 70.0), Vector2D(0.0, -25.0), 1.4, 3.4);
+    */
+
     // Mostrar configuración
     sim.imprimirConfiguracion();
 
